@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Movies</string>
+    <string name="imageview_movie_s_small_poster">Movie\'s small poster</string>
+    <string name="chip_popular">Popular</string>
+    <string name="chip_top_rated">Top rated</string>
+    <string name="chip_newest">Newest</string>
+    <string name="textview_label_title">Title:</string>
+    <string name="imageview_description_big_movie_poster">Big movie poster</string>
+    <string name="textview_Label_movie_title">Movie title</string>
+    <string name="textview_label_number_of_votes">Number of votes:</string>
+    <string name="textview_filler_movie_votes_count">Movie votes count</string>
+    <string name="textview_label_vote_average">Vote average:</string>
+    <string name="textview_filler_movie_average_vote">Movie average vote</string>
+    <string name="textview_label_release_date">Release date:</string>
+    <string name="textview_filler_movie_release_date">Movie release date</string>
+    <string name="textview_filler_movie_overview">Movie overview</string>
+    <string name="imageview_favourite_star_description">Indicates whether the movies is in favourites</string>
+    <string name="menu_item_main">Main</string>
+    <string name="menu_item_favourite">Favourite</string>
+    <string name="menu_item_exit">Exit</string>
+    <string name="imageview_description_launch_the_trailer">Launch the trailer</string>
+</resources>

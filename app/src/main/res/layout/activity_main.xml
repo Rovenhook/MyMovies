@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipPopular"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:onClick="onChipClick"
+        android:text="@string/chip_popular"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:chipBackgroundColor="@android:color/holo_orange_dark"
+        app:chipEndPadding="0dp"
+        app:chipStartPadding="0dp"
+        app:closeIconEndPadding="0dp"
+        app:closeIconStartPadding="0dp"
+        app:iconEndPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewMovies"
+        app:layout_constraintEnd_toStartOf="@+id/chipTopRated"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textEndPadding="0dp"
+        app:textStartPadding="0dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipTopRated"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:onClick="onChipClick"
+        android:text="@string/chip_top_rated"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:chipBackgroundColor="@android:color/holo_orange_dark"
+        app:chipEndPadding="0dp"
+        app:chipStartPadding="0dp"
+        app:closeIconEndPadding="0dp"
+        app:closeIconStartPadding="0dp"
+        app:iconEndPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewMovies"
+        app:layout_constraintEnd_toStartOf="@+id/chipNewest"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chipPopular"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textEndPadding="0dp"
+        app:textStartPadding="0dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipNewest"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:onClick="onChipClick"
+        android:text="@string/chip_newest"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:chipBackgroundColor="@android:color/holo_orange_dark"
+        app:chipEndPadding="0dp"
+        app:chipStartPadding="0dp"
+        app:closeIconEndPadding="0dp"
+        app:closeIconStartPadding="0dp"
+        app:iconEndPadding="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewMovies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chipTopRated"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textEndPadding="0dp"
+        app:textStartPadding="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMovies"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipTopRated" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLoading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
